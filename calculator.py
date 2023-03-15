@@ -12,7 +12,19 @@ while exit_condition_not_reached:
         break
     else:
         token = expression.split(' ')
-        if token[0] == "+":
-            print(add(float(token[1]), float(token[2])))
+        function_name = token[0]
+        num1 = float(token[1])
+        if len(token) == 3: 
+            num2 = float(token[2])
+        if function_name == "+":
+            print(add(num1, num2))
+        if function_name == "-":
+            print(subtract(num1, num2))
+        if function_name == "*":
+            print(multiply(num1, num2))
+        if function_name == "/":
+            print(divide(num1, num2))
+        if function_name == "square":
+            print(square(num1))
     
 
