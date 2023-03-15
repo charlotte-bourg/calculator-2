@@ -26,5 +26,10 @@ while exit_condition_not_reached:
             print(divide(num1, num2))
         if function_name == "square":
             print(square(num1))
-    
+        if function_name == "cube":
+            print(cube(num1))
+        if function_name == "pow":
+            print(power(num1, num2))
+        if function_name == "mod":
+            print(mod(num1, num2))
 
